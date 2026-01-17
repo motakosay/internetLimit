@@ -1,4 +1,4 @@
-// to use: python Bundle_calc_reaming.py --total_gbs 140 --total_days 30 --left_days 28 --remaining_Gb 128
+# to use: python Bundle_calc_reaming.py --total_gbs 140 --total_days 30 --left_days 28 --remaining_Gb 128
 import argparse
 
 def calc_remaining(total_gbs, total_days, left_days, remaining_Gb):
