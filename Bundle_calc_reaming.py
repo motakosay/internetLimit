@@ -2,13 +2,15 @@
 import argparse
 
 def calc_remaining(total_gbs, total_days, left_days, remaining_Gb):
+    
     daily_gb = total_gbs / total_days
-    today = 30 - left_days
-    gbs_for_today = today * 4.6
-    real_remaining_gbs = total_gbs - remaining_total
+    today = (total_days + 1) - left_days
+    gbs_for_today = today * daily_gb
+    real_remaining_gbs = total_gbs - remaining_Gb
     what_left = gbs_for_today - real_remaining_gbs
     
     return what_left
+
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Calculate daily internet usage")
